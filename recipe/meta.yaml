@@ -17,6 +17,7 @@ build:
     - get_environment = pymatgen.cli.get_environment:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
+  skip: true  # [py<=310]
 
 requirements:
   build:
